@@ -1,0 +1,25 @@
+//  PopupMenu
+//
+//  Created by Douglas Clarke on 1/5/23.
+
+
+This is a simple application that displays a variable sized popup menu when text is touched.
+
+This is a simple application that displays a variable sized popup menu when text is touched.
+
+Key Features:
+	Make sure that the popup menu is on the screen.
+	Center the popup above where the touch occurred.
+	Allow for a variable number of menu items (minimum 1)
+		Does not allow menus that are larger than will fit on the screen.
+	Touching text behaves differently depending on if the menu is currently visible.
+  
+  
+To Do:
+	Handle save area better. Currently there are hard coded offsets for landscape and portrait modes
+
+Using the demo application:
+	Click on a line of text to have the popup menu appear.
+	Click on menu item item or a different line of test to have the menu disappear.
+	Click on the tool bar buttons to change the number of items in the popup menu
+	Rotate device with menu show or hidden
