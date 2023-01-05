@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuButton: View {
+struct PopupMenuButton: View {
     let action: () -> Void
     let title:String
     let show:Bool

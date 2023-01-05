@@ -19,10 +19,10 @@ struct PopupMenuView: View {
                     .fill(Color.white)
                     .overlay {
                         VStack (spacing: 15) {
-                            MenuButton(title: "1", show: true, action: {vm.showPopupMenu = false })
-                            MenuButton(title: "2", show:vm.show[2] ?? true, action: {vm.showPopupMenu = false })
-                            MenuButton(title: "3", show:vm.show[3] ?? true, action: {vm.showPopupMenu = false })
-                            MenuButton(title: "4", show:vm.show[4] ?? true, action: {vm.showPopupMenu = false })
+                            PopupMenuButton(title: "1", show: true, action: {vm.showPopupMenu = false })
+                            PopupMenuButton(title: "2", show:vm.show[2] ?? true, action: {vm.showPopupMenu = false })
+                            PopupMenuButton(title: "3", show:vm.show[3] ?? true, action: {vm.showPopupMenu = false })
+                            PopupMenuButton(title: "4", show:vm.show[4] ?? true, action: {vm.showPopupMenu = false })
                         }
                         .padding(15)
                         .measureSize{ size in  // This figures out how tall the menu is

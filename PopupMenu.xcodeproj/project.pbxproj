@@ -14,8 +14,11 @@
 		6BAA27282967337400CAC514 /* PopupMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA27272967337400CAC514 /* PopupMenuView.swift */; };
 		6BAA272A296733CB00CAC514 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA2729296733CB00CAC514 /* ViewModel.swift */; };
 		6BAA272C2967366400CAC514 /* ThingToClickOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA272B2967366400CAC514 /* ThingToClickOn.swift */; };
-		6BAA272E296758B300CAC514 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA272D296758B300CAC514 /* MyButton.swift */; };
-		6BAA273029675D4E00CAC514 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA272F29675D4E00CAC514 /* MenuButton.swift */; };
+		6BAA272E296758B300CAC514 /* MyToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA272D296758B300CAC514 /* MyToolbarButton.swift */; };
+		6BAA273029675D4E00CAC514 /* PopupMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA272F29675D4E00CAC514 /* PopupMenuButton.swift */; };
+		6BAA2732296769DF00CAC514 /* MeasureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA2731296769DF00CAC514 /* MeasureModifier.swift */; };
+		6BAA27372967724C00CAC514 /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA27362967724C00CAC514 /* DeviceRotationViewModifier.swift */; };
+		6BAA27392967742700CAC514 /* toolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA27382967742700CAC514 /* toolbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,11 @@
 		6BAA27272967337400CAC514 /* PopupMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenuView.swift; sourceTree = "<group>"; };
 		6BAA2729296733CB00CAC514 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6BAA272B2967366400CAC514 /* ThingToClickOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingToClickOn.swift; sourceTree = "<group>"; };
-		6BAA272D296758B300CAC514 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
-		6BAA272F29675D4E00CAC514 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		6BAA272D296758B300CAC514 /* MyToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToolbarButton.swift; sourceTree = "<group>"; };
+		6BAA272F29675D4E00CAC514 /* PopupMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenuButton.swift; sourceTree = "<group>"; };
+		6BAA2731296769DF00CAC514 /* MeasureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureModifier.swift; sourceTree = "<group>"; };
+		6BAA27362967724C00CAC514 /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
+		6BAA27382967742700CAC514 /* toolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toolbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				6B957FA52965CE4800F67A37 /* PopupMenuApp.swift */,
-				6B957FA72965CE4800F67A37 /* ContentView.swift */,
-				6BAA27272967337400CAC514 /* PopupMenuView.swift */,
-				6BAA2729296733CB00CAC514 /* ViewModel.swift */,
-				6BAA272B2967366400CAC514 /* ThingToClickOn.swift */,
-				6BAA272D296758B300CAC514 /* MyButton.swift */,
-				6BAA272F29675D4E00CAC514 /* MenuButton.swift */,
+				6BAA2734296771BD00CAC514 /* Views */,
+				6BAA27332967719F00CAC514 /* Model */,
 				6B957FA92965CE4A00F67A37 /* Assets.xcassets */,
 				6B957FAB2965CE4A00F67A37 /* Preview Content */,
 			);
@@ -80,6 +82,37 @@
 				6B957FAC2965CE4A00F67A37 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6BAA27332967719F00CAC514 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA2729296733CB00CAC514 /* ViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BAA2734296771BD00CAC514 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B957FA72965CE4800F67A37 /* ContentView.swift */,
+				6BAA27382967742700CAC514 /* toolbarView.swift */,
+				6BAA27272967337400CAC514 /* PopupMenuView.swift */,
+				6BAA2735296771D300CAC514 /* HelperViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BAA2735296771D300CAC514 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA272B2967366400CAC514 /* ThingToClickOn.swift */,
+				6BAA272D296758B300CAC514 /* MyToolbarButton.swift */,
+				6BAA272F29675D4E00CAC514 /* PopupMenuButton.swift */,
+				6BAA2731296769DF00CAC514 /* MeasureModifier.swift */,
+				6BAA27362967724C00CAC514 /* DeviceRotationViewModifier.swift */,
+			);
+			path = HelperViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,12 +186,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B957FA82965CE4800F67A37 /* ContentView.swift in Sources */,
+				6BAA2732296769DF00CAC514 /* MeasureModifier.swift in Sources */,
 				6BAA272C2967366400CAC514 /* ThingToClickOn.swift in Sources */,
-				6BAA273029675D4E00CAC514 /* MenuButton.swift in Sources */,
+				6BAA273029675D4E00CAC514 /* PopupMenuButton.swift in Sources */,
+				6BAA27372967724C00CAC514 /* DeviceRotationViewModifier.swift in Sources */,
 				6BAA27282967337400CAC514 /* PopupMenuView.swift in Sources */,
+				6BAA27392967742700CAC514 /* toolbarView.swift in Sources */,
 				6BAA272A296733CB00CAC514 /* ViewModel.swift in Sources */,
 				6B957FA62965CE4800F67A37 /* PopupMenuApp.swift in Sources */,
-				6BAA272E296758B300CAC514 /* MyButton.swift in Sources */,
+				6BAA272E296758B300CAC514 /* MyToolbarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

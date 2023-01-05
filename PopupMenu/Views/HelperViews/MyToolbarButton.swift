@@ -1,5 +1,5 @@
 //
-//  MyButton.swift
+//  MyToolButton.swift
 //  PopupMenu
 //
 //  Created by Douglas Clarke on 1/5/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyButton : View {
+struct MyToolbarButton : View {
     let number:Int
     @Binding var show:[Int:Bool]
     
